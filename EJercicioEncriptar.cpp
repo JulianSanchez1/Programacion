@@ -69,7 +69,7 @@ int main()
 					frasencriptada[n]= matriz[frasenum[n]][clavenum[n]];
 			}
 			cout<< "La frase encriptada es: " << endl;
-			for (int n = 0; n < tamanofrase; n++) {//Encripta el mensaje
+			for (int n = 0; n < tamanofrase; n++) {//Muestra el mensaje encriptado
 				cout	<<	frasencriptada[n];
 				}
 	}
