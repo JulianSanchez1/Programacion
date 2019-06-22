@@ -8,27 +8,26 @@ void dibujarfigura();
 
 int main()
 {
-  
+  dibujarfigura();
 }
 
-void dibujarfigura(){ 
-
+void dibujarfigura(){
+    cout<<"Digite el valor de r";
+    cin>>r;
     t=r+50;
     initwindow(t,t);
-
-    arc(253,96,315,135,37);
-    line((50+(2*r)),(50+r),(50+(4*r)),(50+r));
+    arc((50+r),(50+r),0,180,r);
+    arc((50+(r*3)),(50+r),270,360,r);
+    arc((50+((3*r)/2)),(50+((7*r)/2)),270,360,((3*r)/2));
     line(50,(50+r),(50+((3*r)/2)),(50+((3*r)/2)));
     line((50+((3*r)/2)),(50+((5*r)/2)),50,(50+((7*r)/2));
     line(50,(50+((7*r)/2)),(50+((3*r)/2)),(50+((7*r)/2)));
-    line((50+((3*r)/2)),(50+((7*r)/2)),(50+((3*r)/2)),(50+(10*r)));
+    line((50+((3*r)/2)),(50+((7*r)/2)),(50+((3*r)/2)),(50+(5*r)));
+    line((50+(2*r)),(50+r),(50+(4*r)),(50+r));
+    line((50+(3*r)),(50+(r*2)),(50+(3*r)),(50+((7*r)/2)));
     waitForLeftMouseClick();
     closegraph();
 	return 0;
-	
-	
-	
-
 }
 void waitForLeftMouseClick()
 {
