@@ -29,7 +29,7 @@ void dibujarfigura(){
     line((3*r),(r*2),(3*r),((7*r)/2));
     waitForLeftMouseClick();
     closegraph();
-	return 0;
+
 }
 void waitForLeftMouseClick()
 {
