@@ -15,13 +15,13 @@ void dibujarfigura(){
     int r,lx,ly;
     cout<<"Digite el valor de r";
     cin>>r;
-    lx=r*4;
-    ly=r*5;
+    lx=r*4+10;
+    ly=r*5+20;
     initwindow(lx,ly);
     arc(r,r,0,180,r);
     arc((r*3),r,270,360,r);
     arc(((3*r)/2),((7*r)/2),270,360,((3*r)/2));
-    line(50,r,((3*r)/2),((3*r)/2));
+    line(0,r,((3*r)/2),((5*r)/2));
     line(((3*r)/2),((5*r)/2),50,((7*r)/2));
     line(50,((7*r)/2),((3*r)/2),((7*r)/2));
     line(((3*r)/2),((7*r)/2),((3*r)/2),(5*r));
